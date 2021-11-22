@@ -11,11 +11,15 @@
 
     <div id="container">
 
-        <ul>
+        <ol>
 
-            <li></li>
+            <li v-for="mail in mailList" v-if="mailList.length === 10">
 
-        </ul>
+                {{mail}}
+
+            </li>
+
+        </ol>
 
     </div>
 
